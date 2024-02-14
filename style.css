@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html
+{
+    font-size: 22px; /*The main reason for giving this to make the page responsive*/
+}
+body
+{
+    background-color: #353b48;
+    padding: 1rem; /*It will take from html font-size 22px;   /*The main reason for giving this to make the page responsive*/
+}
+ 
+
+.box
+{
+    height: 8rem;
+    border: 5px solid white;
+    border-radius: 3px;
+    overflow: hidden; /*It is for giving not to hover out of box*/
+    transition: 0.5s;
+    transform-origin: top;
+}
+.box:hover
+{
+    transform: scale(0.9);
+}
+.box img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*It is for not strechin*/
+    transition: 0.5s; /*For smooth transition*/
+    transform-origin:bottom;
+}
+
+.box img:hover
+{
+    transform: scale(1.5);
+}
+.container
+{
+    max-width: 1200px; /*It will go upto 1200px only*/
+    margin: 0 auto; /*If it goes upto 1200px it will come in center only*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));/* it will form as a youtube and the gris size will be 200px */
+    gap:1rem; /*It will leave gap b/w each container or gris*/
+}
+
+.controls
+{
+    max-width: 1200px;
+    margin: 0px auto;
+    height: 100px;
+    padding: 10px 0px;
+    display: flex; /*For alligning the buttons*/
+    justify-content: space-between; /*It is for moving the search button to last*/
+}
+
+.btn-group button
+{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #00b894;
+    font-size: 0.7rem;
+    color: #fff;
+    border: 2px solid #00b894; /*To become outline*/
+    cursor: pointer;
+    transition: 0.3s; /*For smoothing while hovering*/
+    border-radius: 3px;
+}
+.btn-group button:hover, 
+.btn-group .btn-clicked /*It apply only when clicked*/
+{
+    background-color: #353b48;
+}
+
+#search
+{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border-radius: 3px;
+    padding: 0 10px;/* it willmove the text right to 10px*/
+    font-size: 0.6rem;
+}
+#search:focus
+{
+    border: 2px solid #00b894;
+}

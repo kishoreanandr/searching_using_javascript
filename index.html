@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- this is for buttons for filtering-->
+    <div class="controls">
+        <div class="btn-group">
+            <button class="btn btn-clicked" data-filter="all">All</button>
+            <button class="btn btn-clicked" data-filter="pizza">pizza</button>
+            <button class="btn btn-clicked" data-filter="cake">Cake</button>
+            <button class="btn " data-filter="icecream">Ice cream</button>
+        </div>
+        <input type="text" placeholder="search food" id="search"></input>
+    </div>
+
+    <!-- for images -->
+    <div class="container">
+        <div class="box" data-item="icecream"><img src="1.jpg" alt=""></div>
+        <div class="box" data-item="cake"><img src="2.jpg" alt=""></div>
+        <div class="box" data-item="pizza"><img src="3.jpg" alt=""></div>
+        <div class="box" data-item="icecream"><img src="4.jpg" alt=""></div>
+        <div class="box" data-item="pizza"><img src="5.jpg" alt=""></div>
+        <div class="box" data-item="cake"><img src="6.jpg" alt=""></div>
+
+        <div class="box" data-item="icecream"><img src="1.jpg" alt=""></div>
+        <div class="box" data-item="cake"><img src="2.jpg" alt=""></div>
+        <div class="box" data-item="pizza"><img src="3.jpg" alt=""></div>
+        <div class="box" data-item="icecream"><img src="4.jpg" alt=""></div>
+        <div class="box" data-item="pizza"><img src="5.jpg" alt=""></div>
+        <div class="box" data-item="cake"><img src="6.jpg" alt=""></div>
+
+        <div class="box" data-item="icecream"><img src="1.jpg" alt=""></div>
+        <div class="box" data-item="cake"><img src="2.jpg" alt=""></div>
+        <div class="box" data-item="pizza"><img src="3.jpg" alt=""></div>
+        <div class="box" data-item="icecream"><img src="4.jpg" alt=""></div>
+        <div class="box" data-item="pizza"><img src="5.jpg" alt=""></div>
+        <div class="box" data-item="cake"><img src="6.jpg" alt=""></div>
+
+        <div class="box" data-item="icecream"><img src="1.jpg" alt=""></div>
+        <div class="box" data-item="cake"><img src="2.jpg" alt=""></div>
+    </div>
+    <div class="result"><p id ="result"></p></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
